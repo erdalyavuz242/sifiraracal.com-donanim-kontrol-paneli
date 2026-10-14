@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donanım Kontrol Paneli</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="style/images/sa-logo-white.png" alt="logo" class="sa-logo">
+    </header>
+    
+    <main>
+        <div class="main-title">
+            <h1>Donanım Kontrol Paneli</h1>
+        </div>
+        
+        <div class="brands">
+            <div class="brand-container"><div class="alfa-romeo"><img src="style/images/brands/alfa-romeo.webp" alt="alfa-romeo" class="brand-logo"><p class="brand-name">Alfa Romeo</p></div></div>
+            <div class="brand-container"><div class="audi"><img src="style/images/brands/audi.webp" alt="audi" class="brand-logo"><p class="brand-name">Audi</p></div></div>
+            <div class="brand-container"><div class="bentley"><img src="style/images/brands/bentley.webp" alt="bentley" class="brand-logo"><p class="brand-name">Bentley</p></div></div>
+            <div class="brand-container"><div class="bmw"><img src="style/images/brands/bmw.webp" alt="bmw" class="brand-logo"><p class="brand-name">BMW</p></div></div>
+            <div class="brand-container"><div class="byd"><img src="style/images/brands/byd.webp" alt="byd" class="brand-logo"><p class="brand-name">Byd</p></div></div>
+            <div class="brand-container"><div class="chery"><img src="style/images/brands/chery.webp" alt="chery" class="brand-logo"><p class="brand-name">Chery</p></div></div>
+            <div class="brand-container"><div class="citroen"><img src="style/images/brands/citroen.webp" alt="citroen" class="brand-logo"><p class="brand-name">Citroen</p></div></div>
+            <div class="brand-container"><div class="cupra"><img src="style/images/brands/cupra.webp" alt="cupra" class="brand-logo"><p class="brand-name">Cupra</p></div></div>
+            <div class="brand-container"><div class="dacia"><img src="style/images/brands/dacia.webp" alt="dacia" class="brand-logo"><p class="brand-name">Dacia</p></div></div>
+            <div class="brand-container"><div class="dfsk"><img src="style/images/brands/dfsk.webp" alt="dfsk" class="brand-logo"><p class="brand-name">DFSK</p></div></div>
+
+            <div class="brand-container"><div class="ds"><img src="style/images/brands/ds.webp" alt="ds" class="brand-logo"><p class="brand-name">DS</p></div></div>
+            <div class="brand-container"><div class="fest"><img src="style/images/brands/fest.webp" alt="fest" class="brand-logo"><p class="brand-name">Fest</p></div></div>
+            <div class="brand-container"><div class="fiat"><img src="style/images/brands/fiat.webp" alt="fiat" class="brand-logo"><p class="brand-name">Fiat</p></div></div>
+            <div class="brand-container"><div class="ford"><img src="style/images/brands/ford.webp" alt="ford" class="brand-logo"><p class="brand-name">Ford</p></div></div>
+            <div class="brand-container"><div class="gazelle"><img src="style/images/brands/gazelle.webp" alt="gazelle" class="brand-logo"><p class="brand-name">Gazelle</p></div></div>
+            <div class="brand-container"><div class="honda"><img src="style/images/brands/honda.webp" alt="honda" class="brand-logo"><p class="brand-name">Honda</p></div></div>
+            <div class="brand-container"><div class="hongqi"><img src="style/images/brands/hongqi.png" alt="hongqi" class="brand-logo"><p class="brand-name">Hongqi</p></div></div>
+            <div class="brand-container"><div class="hyundai"><img src="style/images/brands/hyundai.webp" alt="hyundai" class="brand-logo"><p class="brand-name">Hyundai</p></div></div>
+            <div class="brand-container"><div class="isuzu"><img src="style/images/brands/isuzu.webp" alt="isuzu" class="brand-logo"><p class="brand-name">Isuzu</p></div></div>
+            <div class="brand-container"><div class="jeep"><img src="style/images/brands/jeep.webp" alt="jeep" class="brand-logo"><p class="brand-name">Jeep</p></div></div>
+
+            <div class="brand-container"><div class="ssangyong"><img src="style/images/brands/ssangyong.webp" alt="ssangyong" class="brand-logo"><p class="brand-name">Ssangyong</p></div></div>
+            <div class="brand-container"><div class="kia"><img src="style/images/brands/kia.webp" alt="kia" class="brand-logo"><p class="brand-name">Kia</p></div></div>
+            <div class="brand-container"><div class="land-rover"><img src="style/images/brands/land-rover.webp" alt="land-rover" class="brand-logo"><p class="brand-name">Land Rover</p></div></div>
+            <div class="brand-container"><div class="leapmotor"><img src="style/images/brands/leapmotor.webp" alt="leapmotor" class="brand-logo"><p class="brand-name">Leapmotor</p></div></div>
+            <div class="brand-container"><div class="lexus"><img src="style/images/brands/lexus.webp" alt="lexus" class="brand-logo"><p class="brand-name">Lexus</p></div></div>
+            <div class="brand-container"><div class="maserati"><img src="style/images/brands/maserati.webp" alt="maserati" class="brand-logo"><p class="brand-name">Maserati</p></div></div>
+            <div class="brand-container"><div class="maxus"><img src="style/images/brands/maxus.webp" alt="maxus" class="brand-logo"><p class="brand-name">Maxus</p></div></div>
+            <div class="brand-container"><div class="mercedes"><img src="style/images/brands/mercedes.webp" alt="mercedes" class="brand-logo"><p class="brand-name">Mercedes</p></div></div>
+            <div class="brand-container"><div class="mg"><img src="style/images/brands/mg.webp" alt="mg" class="brand-logo"><p class="brand-name">MG</p></div></div>
+            <div class="brand-container"><div class="mini"><img src="style/images/brands/mini.webp" alt="mini" class="brand-logo"><p class="brand-name">Mini</p></div></div>
+
+            <div class="brand-container"><div class="nieve"><img src="style/images/brands/nieve.webp" alt="nieve" class="brand-logo"><p class="brand-name">Nieve</p></div></div>
+            <div class="brand-container"><div class="nissan"><img src="style/images/brands/nissan.webp" alt="nissan" class="brand-logo"><p class="brand-name">Nissan</p></div></div>
+            <div class="brand-container"><div class="jaecoo"><img src="style/images/brands/jaecoo.webp" alt="jaecoo" class="brand-logo"><p class="brand-name">Omoda Jaecoo</p></div></div>
+            <div class="brand-container"><div class="opel"><img src="style/images/brands/opel.webp" alt="opel" class="brand-logo"><p class="brand-name">Opel</p></div></div>
+            <div class="brand-container"><div class="peugeot"><img src="style/images/brands/peugeot.webp" alt="peugeot" class="brand-logo"><p class="brand-name">Peugeot</p></div></div>
+            <div class="brand-container"><div class="porsche"><img src="style/images/brands/porsche.webp" alt="porsche" class="brand-logo"><p class="brand-name">Porsche</p></div></div>
+            <div class="brand-container"><div class="renault"><img src="style/images/brands/renault.webp" alt="renault" class="brand-logo"><p class="brand-name">Renault</p></div></div>
+            <div class="brand-container"><div class="seat"><img src="style/images/brands/seat.webp" alt="seat" class="brand-logo"><p class="brand-name">Seat</p></div></div>
+            <div class="brand-container"><div class="seres"><img src="style/images/brands/seres.png" alt="seres" class="brand-logo"><p class="brand-name">Seres</p></div></div>
+            <div class="brand-container"><div class="skoda"><img src="style/images/brands/skoda.webp" alt="skoda" class="brand-logo"><p class="brand-name">Skoda</p></div></div>
+
+            <div class="brand-container"><div class="skywell"><img src="style/images/brands/skywell.webp" alt="skywell" class="brand-logo"><p class="brand-name">Skywell</p></div></div>
+            <div class="brand-container"><div class="subaru"><img src="style/images/brands/subaru.webp" alt="subaru" class="brand-logo"><p class="brand-name">Subaru</p></div></div>
+            <div class="brand-container"><div class="suzuki"><img src="style/images/brands/suzuki.webp" alt="suzuki" class="brand-logo"><p class="brand-name">Suzuki</p></div></div>
+            <div class="brand-container"><div class="tesla"><img src="style/images/brands/tesla.webp" alt="tesla" class="brand-logo"><p class="brand-name">Tesla</p></div></div>
+            <div class="brand-container"><div class="togg"><img src="style/images/brands/togg.webp" alt="togg" class="brand-logo"><p class="brand-name">Togg</p></div></div>
+            <div class="brand-container"><div class="toyota"><img src="style/images/brands/toyota.webp" alt="toyota" class="brand-logo"><p class="brand-name">Toyota</p></div></div>
+            <div class="brand-container"><div class="volkswagen"><img src="style/images/brands/volkswagen.webp" alt="volkswagen" class="brand-logo"><p class="brand-name">Volkswagen</p></div></div>
+            <div class="brand-container"><div class="volvo"><img src="style/images/brands/volvo.webp" alt="volvo" class="brand-logo"><p class="brand-name">Volvo</p></div></div>
+            <div class="brand-container"><div class="voyah"><img src="style/images/brands/voyah.webp" alt="voyah" class="brand-logo"><p class="brand-name">Voyah</p></div></div>
+            <div class="brand-container"><div class="yudo"><img src="style/images/brands/yudo.webp" alt="yudo" class="brand-logo"><p class="brand-name">Yudo</p></div></div>
+        </div>
+
+        <div class="bottom-row">
+            <p class="info">donanım paketi sorgulamak için marka seçiniz.</p>
+            <div class="button-container-wrapper">
+                <div class="button-area">
+                    <button class="all-brands-select-button">Tüm Markaları Seç</button>
+                    <button class="all-brands-unselect-button">Seçili Markaları Kaldır</button>
+                </div>
+                <button class="start-button">Kontrolü Başlat</button>
+            </div>
+        </div>
+
+        <div class="result-area">
+            <div class="result-header">
+                <h2>Donanım Paketi Eksik Araçlar</h2>
+                <button class="export-button" disabled>📊 Excel'e Aktar</button>
+            </div>
+            <div class="table-wrapper">
+                <table class="result-table">
+                    <thead>
+                        <tr>
+                            <th>Marka</th>
+                            <th>Model</th>
+                            <th>Versiyon</th>
+                            <th>Durum</th>
+                            <th>Sayfa</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js?v=7"></script>
+</body>
+</html>
